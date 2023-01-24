@@ -5,7 +5,6 @@
 package toystory.common.god.model;
 
 import toystory.common.basket.model.BasketModel;
-import toystory.common.comment.model.CommentModel;
 import toystory.common.file.model.FileModel;
 import toystory.common.goods.model.GoodsModel;
 import toystory.common.member.model.MemberModel;
@@ -23,7 +22,7 @@ public class GodModel {
    private BasketModel basketModel;
    private NoticeModel noticeModel;
    private ReviewModel reviewModel;
-   private CommentModel commentModel;
+   
    private QnaModel qnaModel;
    
    

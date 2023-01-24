@@ -20,5 +20,4 @@ public class AttachFileModel {
 	   private String f_del_yn;
 	   private String f_main_yn;
 	   
-	   
 }

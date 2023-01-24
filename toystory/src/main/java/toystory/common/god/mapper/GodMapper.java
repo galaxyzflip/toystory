@@ -8,7 +8,6 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
-import toystory.common.comment.model.CommentModel;
 import toystory.common.notice.model.NoticeModel;
 import toystory.common.qna.model.QnaModel;
 import toystory.common.review.model.ReviewModel;
@@ -52,11 +51,7 @@ public interface GodMapper {
 	// 작성자 : 이효원, 남재욱 - 12.19 페이징(매개변수) 추가
 	public List<ReviewModel> adminReviewList(@Param("amount") int amount, @Param("pageNum") int pageNum);
 
-	// 관리자가 보는 리뷰+문의 상세보기 및 댓글 폼
-	public CommentModel commentRegister(int r_num, String type);
-
-	// 관리자가 보는 리뷰+문의 상세보기에 댓글 입력 처리
-	public void commentRegisterPro(CommentModel commentModel);
+	
 
 	// 관리자가 보는 문의 상세보기(답글 달 수 있는..)
 	public QnaModel adminQnaDetail(int q_num);

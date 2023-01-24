@@ -1,5 +1,7 @@
 package toystory.common.main.controller;
 
+import java.util.Enumeration;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -25,13 +27,20 @@ public class MainController {
 		model.addAttribute("newProduct", goodsService.goodsNewTop());
 		String savePath="/resources/assets/img/image/";
 		String realPath=request.getRealPath(savePath);
-		log.info("이미지 저장경로 : " + realPath);
-		log.info("이미지 저장경로 : " + realPath);
-		log.info("이미지 저장경로 : " + realPath);
-		log.info("이미지 저장경로 : " + realPath);
 		
+		log.info("이미지 저장경로 : " + realPath);
+		log.info("이미지 저장경로 : " + realPath);
+		log.info("이미지 저장경로 : " + realPath);
+		log.info("이미지 저장경로 : " + realPath);
 		
 		HttpSession session = request.getSession();
+		
+		
+		log.info(session.getId());
+		log.info(session.getId());
+		log.info(session.getId());
+		
+		
 		Object dest = session.getAttribute("dest");
 		log.info("메인에서 dest 출력" + dest);
 

@@ -56,8 +56,8 @@
 	
 	<mvc:interceptors>
 		<mvc:interceptor>
-			<mvc:mapping path="/order/**"/>
-			<mvc:mapping path="/basket/**"/>
+			<!-- <mvc:mapping path="/order/**"/> -->
+			<!-- <mvc:mapping path="/basket/**"/> -->
 			<mvc:mapping path="/myPage/**"/>
 			<mvc:mapping path="/goods/qnapro.toy"/>
 			<mvc:mapping path="/goods/qregister.toy"/>

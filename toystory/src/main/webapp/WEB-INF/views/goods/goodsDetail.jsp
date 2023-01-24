@@ -643,6 +643,7 @@ $(document).ready(function(){
 					<%
 					if (session.getAttribute("loginNum") != null) {
 					%>
+					
 					<button class="btn"
 						onclick="location.href='/goods/qregister.toy?g_id=<c:out value="${detail.g_id}"/>'">
 						문의 작성하기</button>

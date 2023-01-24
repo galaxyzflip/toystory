@@ -5,9 +5,8 @@
 
 package toystory.common.member.controller;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.log;
-
 import java.sql.Date;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -27,8 +26,6 @@ import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j;
 import toystory.common.member.model.MemberModel;
 import toystory.common.member.service.MemberService;
-import toystory.utils.page.Criteria;
-import toystory.utils.page.PageDTO;
 
 @Log4j
 @Controller
@@ -190,5 +187,8 @@ public class MemberController {
 
 		return "member/adultCheck";
 	}
+	
+	
+	
 
 }
